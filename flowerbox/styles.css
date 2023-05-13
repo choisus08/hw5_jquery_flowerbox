@@ -1,0 +1,60 @@
+.head {
+    background-color: rgba(142, 182, 185, 0.901);
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+
+}
+
+.info {
+    display: inline;
+    padding: 50px
+   
+}
+
+.banner {
+    position: relative;
+}
+
+.hands {
+    height: 400px;
+}
+
+#flowerbox {
+    position: absolute;
+
+}
+
+#forall {
+    position: absolute;
+
+    
+}
+
+.row1 {
+    border: 2px solid black
+}
+
+.flowers1 {
+    height: 300px;
+}
+
+.row2 {
+    border: 2px solid black
+}
+
+.flowers2 {
+    height: 300px;
+}
+
+.row3 {
+    border: 2px solid black;
+
+}
+
+.flowers3 {
+    height: 300px
+}
+
