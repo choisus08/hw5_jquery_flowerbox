@@ -2,3 +2,7 @@ body {
     background-color: rgb(108, 37, 37);
     text-align: center;
 }
+
+.dog {
+    font-family: fantasy;
+}

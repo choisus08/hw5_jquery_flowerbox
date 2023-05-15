@@ -11,10 +11,14 @@ $(() => {
     const $container = $("#container")
     // console.log($container)
 
-    $container.append($("<h1>").text("Hogwarts"))   
-    const $h1 = $("h1")
-    // console.log($h1) 
+    const $h1 = $($container.append($("<h1>").text("Hogwarts")))   
+    console.log($h1) 
+
+//////// YEAR 2 ////////
+
+    const $h2 = $($container.append($("<h2>").text("Susie")))
+    const $h3 = $($container.append($("<h3>").text("Gryffindor")))
+    const $h4 = $($container.append($("<h4>").addClass("dog").text("Stanely")))
+    const $h4_wand = $($container.append($("<h4>").text("Holly Wand with Unicorn Hair Core")))
 
 });
-
-
