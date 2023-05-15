@@ -6,3 +6,7 @@ body {
 .dog {
     font-family: fantasy;
 }
+
+ul {
+    list-style: none;
+}
