@@ -42,6 +42,9 @@ $(() => {
     $ul.append($("<li>").addClass("dog").text("leash"))
     $ul.append($("<li>").text("Bertie Bott's Every Flavor [Jelly] Bean"))
     const $lis = $("li")
+    const $secret = $(".secret")
+    
+    
 //    console.log($lis)
 
 //////// YEAR 4 ////////
@@ -98,5 +101,20 @@ $(() => {
 // Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk 
 // (list item with the same class as your pet inside unordered list)
     $h5.prepend($h4)
+
+//////// YEAR 6 ////////
+
+// Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+// Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) 
+// to prevent showing your secret elements too soon.
+   $secret.delay(2000).hide("slow")
+
+// Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+    $secret.show("slow")
+
+// add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
+    $("li.dog").addClass("cabbage")
+
+
 
 });
