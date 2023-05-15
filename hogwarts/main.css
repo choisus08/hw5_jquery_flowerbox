@@ -1,6 +1,7 @@
 body {
     background-color: rgb(108, 37, 37);
     text-align: center;
+    color: rgb(213, 169, 68)
 }
 
 .dog {
@@ -9,4 +10,12 @@ body {
 
 ul {
     list-style: none;
+    margin-right: 40px;
+}
+
+table {
+    margin: auto;
+}
+table, th, td {
+    border: 1px solid gray;
 }
