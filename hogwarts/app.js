@@ -11,15 +11,23 @@ $(() => {
     const $container = $("#container")
     // console.log($container)
 
-    const $h1 = $($container.append($("<h1>").text("Hogwarts")))   
+    $container.append($("<h1>").text("Hogwarts"))
+    const $h1 = $("h1")   
     // console.log($h1) 
 
 //////// YEAR 2 ////////
 
-    const $h2 = $($container.append($("<h2>").text("Susie")))
-    const $h3 = $($container.append($("<h3>").text("Gryffindor")))
-    const $h4 = $($container.append($("<h4>").addClass("dog").text("Stanely")))
-    const $h4_wand = $($container.append($("<h4>").text("Holly Wand with Unicorn Hair Core")))
+    $container.append($("<h2>").text("Susie Gordon"))
+    const $h2 = $("h2")
+
+    $container.append($("<h3>").text("Gryffindor"))
+    const $h3 = $("h3")
+
+    $container.append($("<h4>").addClass("dog").text("Stanely"))
+    const $h4 = $("h4")
+
+   $container.append($("<h4>").addClass("wand").text("Holly Wand with Unicorn Hair Core"))
+   const $h4_Wand = $(".wand")
 
 //////// YEAR 3 ////////
 
@@ -27,6 +35,7 @@ $(() => {
     const $ul = $("ul")
 
     $ul.append($("<li>").text("butter beer"))
+        const $li_1 = $("li")
     $ul.append($("<li>").addClass("secret").text("invisibility cloak"))
     $ul.append($("<li>").addClass("secret").text("magic map"))
     $ul.append($("<li>").addClass("secret").text("time turner"))
@@ -70,5 +79,24 @@ $(() => {
     const $tr5 = $(".5")
     $tr5.append($("<td>").text("Quidditch practice"))
 
+//////// YEAR 5 ////////
+
+//  Break your wand! (select the element that contains your wand and remove it)
+    $h4_Wand.remove() 
+
+// Class was hard! Drink all your butter beer! (remove just the butter beer from your list)   
+    $li_1.remove() 
+
+// Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
+    $container.append($("<h4>").addClass("new").text("Rowan Wand with Dragon Heartstrings Core"))
+    const $h4_newWand = $(".new")
+    $h4_newWand.insertAfter($h4)
+
+//Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your main.css file
+    $h4_newWand.css("color", "rgba(21, 86, 21, 0.977)")
+
+// Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk 
+// (list item with the same class as your pet inside unordered list)
+    $h5.prepend($h4)
 
 });
