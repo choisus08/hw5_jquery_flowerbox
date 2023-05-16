@@ -100,7 +100,7 @@ $(() => {
 
 // Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk 
 // (list item with the same class as your pet inside unordered list)
-    $h5.prepend($h4)
+    $container.append($h4)
 
 //////// YEAR 6 ////////
 
@@ -115,6 +115,17 @@ $(() => {
 // add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
     $("li.dog").addClass("cabbage")
 
+//////// YEAR 7 ///////
+
+// Update your class schedule to read 'Fall 2018'
+    $h5.text("Fall 2018")
+
+// Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
+    $ul.prepend($("<li>").text("Butter beer"))
+
+// Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; 
+// replace the unodered list's property of trunk with a new property of chest
+    $ul.attr("storage", "chest")
 
 
 });
