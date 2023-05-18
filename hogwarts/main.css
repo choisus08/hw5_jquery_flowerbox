@@ -1,7 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
 body {
     background-color: rgb(108, 37, 37);
     text-align: center;
-    color: rgb(213, 169, 68)
+    color: rgb(213, 169, 68);
+}
+
+h1 {
+    color: white;
+    font-family: 'Harry Potter', sans-serif;
+
 }
 
 .dog {
